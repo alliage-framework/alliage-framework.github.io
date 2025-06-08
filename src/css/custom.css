@@ -1,0 +1,161 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+.hero.hero--primary {
+  --ifm-hero-background-color: var(--ifm-background-color);
+  --ifm-hero-text-color: var(--ifm-font-color-base);
+}
+
+.button.button--secondary {
+  background-color: var(--ifm-color-emphasis-900);
+  color: var(--ifm-color-emphasis-0);
+  border-color: var(--ifm-color-emphasis-900);
+}
+
+.button.button--secondary:hover, .button.button--secondary:focus {
+  background-color: var(--ifm-color-emphasis-700);
+  border-color: var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-0);
+}
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-font-family-base: 'Anuphan', sans-serif;
+  --ifm-font-family-sans-serif: 'Anuphan', sans-serif;
+
+  /* Main brand color (copper/beige) */
+  --ifm-color-primary: #b8895c;
+  --ifm-color-primary-dark: #a67749;
+  --ifm-color-primary-darker: #9c7143;
+  --ifm-color-primary-darkest: #815e38;
+  --ifm-color-primary-light: #c49575;
+  --ifm-color-primary-lighter: #d0a482;
+  --ifm-color-primary-lightest: #e8c7a8;
+
+  /* Neutral grays */
+  --ifm-color-emphasis-0: #faf9f8;
+  --ifm-color-emphasis-100: #f5f3f1;
+  --ifm-color-emphasis-200: #eeebe8;
+  --ifm-color-emphasis-300: #e3ded9;
+  --ifm-color-emphasis-400: #d1c9c2;
+  --ifm-color-emphasis-500: #b8aca1;
+  --ifm-color-emphasis-600: #9c8d80;
+  --ifm-color-emphasis-700: #7a6b5e;
+  --ifm-color-emphasis-800: #5a4d42;
+  --ifm-color-emphasis-900: #232323;
+
+  /* Backgrounds */
+  --ifm-background-color: #faf9f8;
+  --ifm-background-surface-color: #f5f3f1;
+
+  /* Text */
+  --ifm-font-color-base: #232323;
+
+  /* Footer */
+  --ifm-footer-background-color: #5a4d42;
+  --ifm-footer-color: #f5f3f1;
+  --ifm-footer-link-color: #b8895c;
+  --ifm-footer-title-color: #e8c7a8;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(184, 137, 92, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #b8895c; /* keep copper for accents */
+  --ifm-color-primary-dark: #a67749;
+  --ifm-color-primary-darker: #9c7143;
+  --ifm-color-primary-darkest: #815e38;
+  --ifm-color-primary-light: #c49575;
+  --ifm-color-primary-lighter: #d0a482;
+  --ifm-color-primary-lightest: #e8c7a8;
+
+  /* Dark grays */
+  --ifm-color-emphasis-0: #232323;
+  --ifm-color-emphasis-100: #333333;
+  --ifm-color-emphasis-200: #4b4b4b;
+  --ifm-color-emphasis-300: #626262;
+  --ifm-color-emphasis-400: #7a7a7a;
+  --ifm-color-emphasis-500: #919191;
+  --ifm-color-emphasis-600: #a8a8a8;
+  --ifm-color-emphasis-700: #c0c0c0;
+  --ifm-color-emphasis-800: #d7d7d7;
+  --ifm-color-emphasis-900: #f5f3f1;
+
+  /* Backgrounds */
+  --ifm-background-color: #232323;
+  --ifm-background-surface-color: #333333;
+
+  /* Text */
+  --ifm-font-color-base: #f5f3f1;
+
+  /* Footer */
+  --ifm-footer-background-color: #4b4b4b;
+  --ifm-footer-color: #f5f3f1;
+  --ifm-footer-link-color: #b8895c;
+  --ifm-footer-title-color: #e8c7a8;
+
+  --docusaurus-highlighted-code-line-bg: rgba(184, 137, 92, 0.15);
+}
+
+/* Footer styling with more specific selectors */
+.footer,
+.footer--dark {
+  --ifm-footer-background-color: #5a4d42 !important;
+  background: #5a4d42 !important;
+  background-color: #5a4d42 !important;
+  color: #f5f3f1;
+}
+
+.footer__title,
+.footer--dark .footer__title {
+  color: #e8c7a8;
+}
+
+.footer__link-item,
+.footer--dark .footer__link-item {
+  color: #b8895c;
+}
+
+.footer__link-item:hover,
+.footer--dark .footer__link-item:hover {
+  color: #e8c7a8;
+}
+
+.footer__copyright,
+.footer--dark .footer__copyright {
+  color: #f5f3f1;
+}
+
+/* Dark theme specific overrides */
+[data-theme='dark'] .footer,
+[data-theme='dark'] .footer--dark {
+  --ifm-footer-background-color: #4b4b4b !important;
+  background: #4b4b4b !important;
+  background-color: #4b4b4b !important;
+  color: #f5f3f1;
+}
+
+[data-theme='dark'] .footer__title,
+[data-theme='dark'] .footer--dark .footer__title {
+  color: #e8c7a8;
+}
+
+[data-theme='dark'] .footer__link-item,
+[data-theme='dark'] .footer--dark .footer__link-item {
+  color: #b8895c;
+}
+
+[data-theme='dark'] .footer__link-item:hover,
+[data-theme='dark'] .footer--dark .footer__link-item:hover {
+  color: #e8c7a8;
+}
+
+[data-theme='dark'] .footer__copyright,
+[data-theme='dark'] .footer--dark .footer__copyright {
+  color: #f5f3f1;
+}
